@@ -1,0 +1,12 @@
+// na poradi importu zalezi, nemuzu pouzit vlastnosti, ktere importuji pozdeji
+
+//import normalised z node_modules, ktera normalizuje vsechny prvky pro vsechny prohlizece
+@import '../../node_modules/normalize.css/normalize';
+
+// Abstracts //
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Base
+@import 'base/base';
+@import 'base/typo';

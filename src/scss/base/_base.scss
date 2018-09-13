@@ -1,0 +1,15 @@
+// em, rem - relativni jednotky (10 rem je velikost 10x vetsi, nez je aktualni velikost pisma v prohlizeci)
+// em pouzivame na @media query
+// rem zavisi vzdy na vychozi velikosti pisma v prohlizeci (16px)
+// em zavisi vzdy na rodicovskem prvku 
+
+hmtl {
+	font-size: 62.5%;
+	// chceme neco, co se dobre pocita, standardne je velikost 16px, kdyz zadame 10px, tak jsme v absolutnich jednotkach a prestane fungovat relativni pismo, kdyz si uzovatel nastavi, ze chce vsechno vetsi. proto jsme si spocitali, kolik kje 10px z 16 px a nastavili to procentem na celem webu. Tim jsme zmenili vychozi nastaveni prohlizece.
+}
+
+body {
+	font-size: 1.6rem;
+	// my ted ale chceme vychozi nastaveni 16px v relativnim zobrazeni, v html jsme nastavili 10px (relativne) - takze musime dat odpovidajici zvetseni v rem
+	// toto udelame vzdy, abysme vsechno mohli delat pohodlne v nasobcich rem, ted to bude nasobek deseti (1 rem)
+}

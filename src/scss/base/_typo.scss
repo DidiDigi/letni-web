@@ -1,0 +1,32 @@
+body {
+	font-family: $ut-f-primary;
+}
+
+.ut-h1 {
+	
+	
+	@include moreThan(75em) {
+		font-size: 5.8rem;
+	}
+}
+
+.ut-h2 {
+
+
+	@include moreThan(75em) {
+		font-size: 4.8rem;
+	}
+}
+
+.ut-h3 {
+
+
+	@include moreThan(75em) {
+		font-size: 3.2rem;
+	}
+}
+
+
+// vsechno se snazime stylovat pres css tridy a vsem prvkum trid davame, vyhybame se stylovat primo v html
+
+// Normalize.css ma v sobe vsechny prvky stejne nastavene - doinstalujeme npm install normalize.css

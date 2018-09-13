@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<!-- pro zjednoduseni pisu CSS primo sem -->
+<!-- ~ znamena, ze jde o sourozence -->
+<style>
+	#check:checked ~ .menu{
+		display: block;
+		opacity: 1;
+	}
+
+	#check {
+		display: none;
+	}
+
+	#check:checked + label {
+		background: green;
+	}
+	.menu {
+		/* display: none; */
+		opacity: 0;
+		transition: 500ms;
+	}
+
+	label {
+		width: 30px;
+		height: 30px;
+		border: 2px solid black;
+		cursor: pointer;
+		padding: 5px;
+		line-height: 2;
+	}
+</style>
+
+<body>
+		<input type="checkbox" id="check">
+	<label for="check">menu</label>
+	<ul class="menu">
+		<li>Home</li>
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+	
+</body>
+
+</html>
